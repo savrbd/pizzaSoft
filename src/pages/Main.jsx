@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import Table from '../component/table';
-import _ from "lodash";
+// import _ from "lodash";
 import FilterForm from '../component/filterForm';
 
 const Main = ({ employees, arrRole, onEmployeeEdit }) => {
+    console.log(employees)
     const [selectedProf, setSelectedProf] = useState({name: '', value: '', isArchive: false})
     const [sortBy, setSortBy] = useState({ iter: '', order: '' });
     const onFilter = (params) => {

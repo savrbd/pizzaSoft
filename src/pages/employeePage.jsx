@@ -13,7 +13,7 @@ const EmployeePage = ({ arrRole, emplChange, onChange, onUpdateEmployee }) => {
         onUpdateEmployee()
         navigate(-1)
     }
-    const maskPhone=['(', /[0-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
+    const maskPhone=['+', '7',' ', '(', /[0-9]/, /\d/, /\d/, ')', ' ', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
     const maskData=[ /[0-9]/, /\d/, '.', /\d/, /\d/,'.', /\d/, /\d/, /\d/, /\d/];
 
     if (emplChange){
